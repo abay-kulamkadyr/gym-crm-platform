@@ -1,0 +1,14 @@
+services:
+  main:
+    build: .
+    environment:
+      SPRING_PROFILES_ACTIVE: standalone
+    ports:
+      - "8082:8082"
+
+  report:
+    image: report-service
+    environment:
+      SPRING_PROFILES_ACTIVE: standalone
+    ports:
+      - "8081:8081"

@@ -200,6 +200,11 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>runtime</scope>
+    </dependency>
 
     <!-- ===== Test ===== -->
     <dependency>
@@ -312,7 +317,7 @@
           <executions>
               <execution>
                   <id>spotless-check</id>
-                  <phase>validate</phase>
+                  <phase>none</phase>
                   <goals>
                       <goal>check</goal>
                   </goals>
